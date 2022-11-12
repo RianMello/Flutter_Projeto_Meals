@@ -33,12 +33,12 @@ class DrawerComponent extends StatelessWidget {
             width: double.infinity,
             padding: EdgeInsets.all(20),
             color: Theme.of(context).colorScheme.secondary,
-            alignment: Alignment.bottomRight,
+            alignment: Alignment.bottomLeft,
             child: Text(
-              "Tela Inicial",
+              "App Meals",
               style: TextStyle(
                 fontWeight: FontWeight.w900,
-                fontSize: 30,
+                fontSize: 40,
                 color: Theme.of(context).colorScheme.primary,
               ),
             ),
@@ -48,7 +48,7 @@ class DrawerComponent extends StatelessWidget {
           ),
           _createItem(
             Icons.restaurant_rounded,
-            "Refeições",
+            "Meals",
             () => Navigator.of(context).pushReplacementNamed(AppRoutes.home),
           ),
           SizedBox(
@@ -56,7 +56,7 @@ class DrawerComponent extends StatelessWidget {
           ),
           _createItem(
             Icons.settings,
-            'Configurações',
+            'Settings',
             () =>
                 Navigator.of(context).pushReplacementNamed(AppRoutes.settings),
           )

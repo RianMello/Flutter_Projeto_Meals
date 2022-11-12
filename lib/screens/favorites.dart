@@ -14,7 +14,7 @@ class FavoriteScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 15),
         child: Center(
           child: Text(
-            "Nenhuma refeição foi marcada como favorita, volte e marque algumas na tela de detalhes da refeição!",
+            "No meals were favorited, go back and favorite some in the meal details screen!",
             textAlign: TextAlign.justify,
             style: TextStyle(
               fontSize: 18,

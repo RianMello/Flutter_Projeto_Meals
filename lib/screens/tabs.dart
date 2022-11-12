@@ -24,11 +24,11 @@ class _TabsScreenState extends State<TabsScreen> {
     super.initState();
     _screens = [
       {
-        'title': 'Lista de Cateogorias',
+        'title': 'List of Categories',
         'screen': const CategoriesScreen(),
       },
       {
-        'title': 'Meus Favoritos',
+        'title': 'My favorites',
         'screen': FavoriteScreen(widget.favoriteMeals),
       },
     ];
@@ -57,12 +57,12 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).colorScheme.primary,
             icon: Icon(Icons.category),
-            label: "Categorias",
+            label: "Categories",
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).colorScheme.primary,
             icon: Icon(Icons.star),
-            label: "Favoritos",
+            label: "Favorites",
           ),
         ],
       ),
